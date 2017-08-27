@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="ccpu" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>com.exdev.cc.model.Customer</class>
+		<class>com.exdev.cc.model.CustomerCar</class>
+		<class>com.exdev.cc.model.Service</class>
+		<class>com.exdev.cc.model.User</class>
+		<class>com.exdev.cc.model.ServiceRequest</class>
+		<class>com.exdev.cc.model.Partner</class>
+		<class>com.exdev.cc.model.PartnerService</class>
+		<class>com.exdev.cc.model.Unit</class>
+		<class>com.exdev.cc.model.Staff</class>
+		<class>com.exdev.cc.model.UnitStaff</class>
+		<class>com.exdev.cc.model.TimeSlot</class>
+		<class>com.exdev.cc.model.ServicePrice</class>
+		<class>com.exdev.cc.model.CarType</class>
+		<class>com.exdev.cc.model.ExtraService</class>
+		<class>com.exdev.cc.model.ServiceRequestCustomerCar</class>
+		<class>com.exdev.cc.model.ServiceRequestExtraService</class>
+		<shared-cache-mode>NONE</shared-cache-mode>
+		<properties>
+			<property name="eclipselink.target-database" value="MySQL" />
+			<property name="eclipselink.logging.level.sql" value="SEVERE" />
+			<property name="eclipselink.logging.parameters" value="true" />
+			<property name="eclipselink.jdbc.cache-statements" value="true" />
+			<property name="eclipselink.logging.level" value="SEVERE" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://569608512d52718024000042-cleancarapp.rhcloud.com:40471/cleancarapp?useUnicode=true&amp;characterEncoding=UTF-8"/>
+			<property name="javax.persistence.jdbc.user" value="adminbTauC5R"/>
+			<property name="javax.persistence.jdbc.password" value="_SkDjIR8RPCq"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+		</properties>
+	</persistence-unit>
+</persistence>
