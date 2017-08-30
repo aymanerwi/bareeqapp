@@ -79,7 +79,8 @@
 			<groupId>commons-beanutils</groupId>
 			<artifactId>commons-beanutils-core</artifactId>
 			<version>1.8.3</version>
-		</dependency><dependency>
+		</dependency>
+		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.25</version>
@@ -95,7 +96,7 @@
 			<artifactId>jasypt</artifactId>
 			<version>1.9.2</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.eclipse.persistence</groupId>
 			<artifactId>eclipselink</artifactId>
@@ -175,11 +176,13 @@
 				<finalName>bareeqapp</finalName>
 				<plugins>
 					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-war-plugin</artifactId>
-						<version>2.1.1</version>
+						<version>2.3</version>
 						<configuration>
+							<failOnMissingWebXml>false</failOnMissingWebXml>
 							<outputDirectory>deployments</outputDirectory>
-							<warName>bareeq</warName>
+							<warName>ROOT</warName>
 						</configuration>
 					</plugin>
 				</plugins>
