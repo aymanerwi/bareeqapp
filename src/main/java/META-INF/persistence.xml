@@ -27,9 +27,9 @@
 			<property name="eclipselink.logging.parameters" value="true" />
 			<property name="eclipselink.jdbc.cache-statements" value="true" />
 			<property name="eclipselink.logging.level" value="SEVERE" />
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://mysql:3306/bareeqdb?useUnicode=true&amp;characterEncoding=UTF-8"/>
-			<property name="javax.persistence.jdbc.user" value="root"/>
-			<property name="javax.persistence.jdbc.password" value="994506"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://us-cdbr-azure-southcentral-f.cloudapp.net:3306/bareeqdb?useUnicode=true&amp;characterEncoding=UTF-8"/>
+			<property name="javax.persistence.jdbc.user" value="b94acb39ce44ba"/>
+			<property name="javax.persistence.jdbc.password" value="4263800e"/>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
 		</properties>
 	</persistence-unit>
